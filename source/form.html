@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <div class="main-nav__container container">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a href="index.html">Главная</a></li>
+            <li class="site-list__item"><a href="#">Фото и видео</a></li>
+            <li class="site-list__item site-list__item--active"><a>Форма отзыва</a></li>
+            <li class="site-list__item"><a href="https://htmlacademy.ru/study">Html Academy</a></li>
+          </ul>
+        </div>
+        <a class="page-header__logo">
+          <img src="img/logo.svg" alt="Седона" width="102" height="84">
+        </a>
+        <button type="button" class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+      </nav>
+    </header>
+
+    <section class="page-main__background">
+      <img src="https://via.placeholder.com/302x214" width="302" height="214" alt="Седона">
+    </section>
+
+    <section class="comment">
+      <h2 class="commet__title subtitle">Оставьте свой отзыв</h2>
+      <p class="comment__text site-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </section>
+
+    <section class="form">
+      <form action="#">
+        <label>
+          <span>Имя*:</span>
+          <input class="form-name form__place" type="text" id="name-space" placeholder="Петр">
+        </label><br>
+        <label>
+          <span>Фамилия*:</span>
+          <input class="form-surname form__place" type="text" id="name-space" placeholder="Иванов">
+        </label><br>
+        <label>
+          <span>Отчество:</span>
+          <input class="form-middlename form__place" type="text" id="name-space" placeholder="Александрович">
+        </label>
+      </form>
+    </section>
+
+    <section class="contact">
+      <h2 class="contact__title subtitle">Контактная информация</h2>
+      <form action="#">
+        <label>
+          <span>Контактный телефон*:</span><br>
+          <input class="phone_form form__place" type="text">
+        </label><br>
+        <label>
+          <span>Электронная почта*:</span><br>
+          <input class="phone_form form__place" type="text">
+        </label>
+      </form>
+    </section>
+
+    <section class="mark">
+      <h2 class="mark__title subtitle">Ваше общее впечатление:</h2>
+      <div class="mark__choose">
+        <label>
+          <input type="radio" name="answer_one" value="Скорее положительное" checked>
+          Скорее положительное
+        </label><br>
+        <label>
+          <input type="radio" name="answer_two" value="Скорее отрицательное">
+          Скорее отрицательное
+        </label><br>
+        <label>
+          <input type="radio" name="answer_three" value="Затрудняюсь ответить">
+          Затрудняюсь ответить
+        </label>
+      </div>
+    </section>
+
+    <section class="check">
+      <h2 class="check__title subtitle">Посещенные достопримечательности:</h2>
+      <div class="check-list">
+        <label>
+          <input type="checkbox" name="check_one" name="Мост Дьявола" checked>
+          Мост Дьявола
+        </label><br>
+        <label>
+          <input type="checkbox" name="check_one" name="Гора-Колокол" checked>
+          Гора-Колокол
+        </label><br>
+        <label>
+          <input type="checkbox" name="check_one" name="Слайд-парк" checked>
+          Слайд-парк
+        </label><br>
+        <label>
+          <input type="checkbox" name="check_one" name="Красные скалы">
+          Красные скалы
+        </label>
+      </div>
+    </section>
+
+    <section class="review">
+      <h2 class="review__title subtitle">Опишите свои эмоции:</h2>
+      <label>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+      </label>
+      <button type="button" class="review__button button">Найти гостиницу</button>
+    </section>
+
+    <footer class="page-footer">
+      <div class="page-footer__container container">
+        <h2 class="page-footer__title subtitle">
+          #VISITSEDONA
+        </h2>
+        <div class="page-footer__social social">
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social__link social__link--twitter" href="https://twitter.com">
+                Twitter
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/">
+                Facebook
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/">
+                Youtube
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text site-text">Разработано:</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/htmlacademy.svg" alt="HTMLAcademy" width="27" height="34">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
