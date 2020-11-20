@@ -31,76 +31,76 @@
         <p class="comment__text site-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
       <form class="form" action="#">
-        <fieldset class="info">
-          <h2 class="info__title">Представьтесь</h2>
-          <label class="info-label form-label">
-            <span class="form__text form-label__name">Имя*:</span>
-            <input class="form-name form__place" type="text" id="name-space" placeholder="Петр">
+        <fieldset class="form__fieldset">
+          <h2 class="form__fieldset-title">Представьтесь</h2>
+          <label class="form__label">
+            <span class="form__label-name">Имя*:</span>
+            <input class="form__input-text" type="text" id="name-space" placeholder="Петр">
           </label><br>
-          <label class="info-label form-label">
-            <span class="form__text form-label__surname">Фамилия*:</span>
-            <input class="form-surname form__place" type="text" id="name-space" placeholder="Иванов">
+          <label class="form__label">
+            <span class="form__label-surname">Фамилия*:</span>
+            <input class="form__input-text" type="text" id="name-space" placeholder="Иванов">
           </label><br>
-          <label class="info-label form-label">
-            <span class="form-label__middlename">Отчество:</span>
-            <input class="form-middlename form__place" type="text" id="name-space" placeholder="Александрович">
+          <label class="form__label">
+            <span class="form__label-middlename">Отчество*:</span>
+            <input class="form__input-text" type="text" id="name-space" placeholder="Александрович">
           </label>
         </fieldset>
 
-        <fieldset class="contact">
-          <h2 class="contact__title subtitle">Контактная информация</h2>
-          <label class="contact-label form-label">
-            <span class="form__text contact-label__email">Контактный телефон*:</span><br>
-            <input class="phone_form form__place" type="text">
+        <fieldset class="form__contact">
+          <h2 class="form__contact-title">Контактная информация</h2>
+          <label class="form__label">
+            <span class="form__text">Контактный телефон*:</span><br>
+            <input class="form__input-text" type="text">
           </label><br>
-          <label class="contact-label form-label">
-            <span class="form__text contact-label__email">Электронная почта*:</span><br>
-            <input class="form_phone form__place" type="text">
+          <label class="form__label">
+            <span class="form__text">Электронная почта*:</span><br>
+            <input class="form__input-text" type="text">
           </label>
         </fieldset>
 
-        <fieldset class="mark">
-          <h2 class="mark__title subtitle">Ваше общее впечатление:</h2>
-          <label class="mark-label">
-            <input class="mark-label__input" type="radio" name="answer_one" value="Скорее положительное" checked>
-            <span class="mark-label__text form__text--bold">Скорее положительное</span>
+        <fieldset class="form__mark">
+          <h2 class="form__mark-title">Ваше общее впечатление:</h2>
+          <label class="form__label">
+            <input class="form__input-radio" type="radio" name="answer_one" value="Скорее положительное" checked>
+            <span class="form__text">Скорее положительное</span>
           </label><br>
-          <label class="mark-label">
-            <input class="mark-label__input" type="radio" name="answer_two" value="Скорее отрицательное">
-            <span class="mark-label__text form__text--bold">Скорее отрицательное</span>
+          <label class="form__label">
+            <input class="form__input-radio" type="radio" name="answer_two" value="Скорее отрицательное">
+            <span class="form__text">Скорее отрицательное</span>
           </label><br>
-          <label class="mark-label">
-            <input class="mark-label__input" type="radio" name="answer_three" value="Затрудняюсь ответить">
-            <span class="mark-label__text form__text--bold">Затрудняюсь ответить</span>
+          <label class="form__label">
+            <input class="form__input-radio" type="radio" name="answer_three" value="Затрудняюсь ответить">
+            <span class="form__text">Затрудняюсь ответить</span>
           </label>
         </fieldset>
 
-        <fieldset class="check">
-          <h2 class="check__title subtitle">Посещенные достопримечательности:</h2>
-          <label class="check-label">
-            <input class="check__label-input" type="checkbox" name="check_one" name="Мост Дьявола" checked>
-            <span class="check__label-text form__text--bold">Мост Дьявола</span>
+        <fieldset class="form__check">
+          <h2 class="form__check-title">Посещенные достопримечательности:</h2>
+          <label class="form__label">
+            <input class="form__input-checkbox" type="checkbox" name="check_one" name="Мост Дьявола" checked>
+            <span class="form__text">Мост Дьявола</span>
           </label><br>
-          <label>
-            <input class="check__label-input" type="checkbox" name="check_one" name="Гора-Колокол" checked>
-            <span class="check__label-text form__text--bold">Гора-Колокол</span>
+          <label class="form__label">
+            <input class="form__input-checkbox" type="checkbox" name="check_one" name="Гора-Колокол" checked>
+            <span class="form__text">Гора-Колокол</span>
           </label><br>
-          <label>
-            <input class="check__label-input" type="checkbox" name="check_one" name="Слайд-парк" checked>
-            <span class="check__label-text form__text--bold">Слайд-парк</span>
+          <label class="form__label">
+            <input class="form__input-checkbox" type="checkbox" name="check_one" name="Слайд-парк" checked>
+            <span class="form__text">Слайд-парк</span>
           </label><br>
-          <label>
-            <input class="check__label-input" type="checkbox" name="check_one" name="Красные скалы">
-            <span class="check__label-text form__text--bold">Красные скалы</span>
+          <label class="form__label">
+            <input class="form__input-checkbox" type="checkbox" name="check_one" name="Красные скалы">
+            <span class="form__text">Красные скалы</span>
           </label>
         </fieldset>
 
-        <fieldset class="review">
-          <h2 class="review__title subtitle">Опишите свои эмоции:</h2>
-          <label class="review-label">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+        <fieldset class="form__review">
+          <h2 class="form__review-title">Опишите свои эмоции:</h2>
+          <label class="form__label">
+            <textarea class="form__textarea" name="" id="" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
           </label>
-          <input type="submit" class="review__label-submit button" value="Отправить отзыв"></button>
+          <input class="form__input-submit" type="submit" value="Отправить отзыв"></button>
         </fieldset>
       </form>
     </main>
