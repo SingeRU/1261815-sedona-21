@@ -3,6 +3,8 @@
   min-height: 100%;
   margin: 0;
   background-color: @white;
+  font-family: "PT Sans", "Arial", sans-serif;
+  line-height: 27px;
 }
 
 a {
@@ -14,29 +16,8 @@ img {
   max-width: 100%;
 }
 
-@font-face {
-  font-family: "PT Sans";
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src:
-    url("../fonts/ptsans.woff2"),
-    url("../fonts/ptsans.woff");
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  src:
-    url("../fonts/ptsansbold.woff2"),
-    url("../fonts/ptsansbold.woff");
-}
-
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -44,5 +25,6 @@ img {
   padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
