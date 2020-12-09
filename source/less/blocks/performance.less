@@ -4,7 +4,22 @@
   font-weight: 700;
   line-height: 26px;
   letter-spacing: 0;
-  text-align: center;
+  width: 285px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .performance__title {
+    width: 640px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .performance__title {
+    width: 960px;
+  }
 }
 
 .performance__text {

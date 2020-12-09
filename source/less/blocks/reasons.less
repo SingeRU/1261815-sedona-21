@@ -1,3 +1,40 @@
 .reasons__title {
   background-color: @lightgrey;
 }
+
+.reasons__content-container {
+  width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .reasons__content-container {
+    width: @tablet-width;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reasons__content-container {
+    width: @desktop-width;
+  }
+}
+
+.reasons__list {
+  width: 280px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .reasons__list {
+    width: @tablet-width;
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reasons__list {
+    width: @desktop-width;
+  }
+}

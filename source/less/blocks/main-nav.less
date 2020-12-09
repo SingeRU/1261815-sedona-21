@@ -1,9 +1,47 @@
 .main-nav__list {
-  background-color: @lightskyblue;
+  display: flex;
+  flex-direction: column;
   color: @white;
+  background-color: @lightskyblue;
   line-height: 40px;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
+  left: 10%;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    width: 640px;
+    background-color: @white;
+    transition: 0.3s;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    width: 960px;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
 }
