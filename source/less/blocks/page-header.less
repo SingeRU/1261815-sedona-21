@@ -5,5 +5,26 @@
 
 .page-header__logo {
   min-height: 84px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    position: absolute;
+    top: -55px;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    position: absolute;
+    top: -55px;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+}
+
+.page-header__container {
   position: relative;
 }

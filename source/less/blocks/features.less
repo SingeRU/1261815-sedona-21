@@ -1,5 +1,22 @@
-.features-item {
-  list-style: none;
+@media (max-width: @mobile-width-only) {
+  .features-title {
+    text-align: start;
+    padding-left: 69px;
+  }
+
+  .features__list-text {
+    text-align: start;
+    padding-left: 69px;
+    padding-bottom: 36px;
+  }
+
+  .features:last-child {
+    padding-bottom: 0;
+  }
+
+  .features-item {
+    list-style: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -7,5 +24,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    min-width: 256px;
   }
 }

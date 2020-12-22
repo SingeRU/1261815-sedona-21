@@ -10,22 +10,24 @@
     <div class="container">
       <header class="page-header">
         <nav class="main-nav">
-          <div class="main-nav__container">
+          <div class="main-nav__container main-nav__container--opened">
+            <button type="button" class="main-nav__close"><span class="visually-hidden"></span></button>
             <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+              <li class="site-list__item site-list__item--active"><a class="site-list__link">Главная</a></li>
               <li class="site-list__item"><a class="site-list__link" href="#">Фото и видео</a></li>
               <li class="site-list__item"><a class="site-list__link" href="form.html">Форма отзыва</a></li>
               <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/study">Html Academy</a></li>
             </ul>
           </div>
-          <a class="page-header__logo">
-            <img src="img/logo.svg" alt="Седона" width="102" height="84">
-          </a>
-          <button type="button" class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="page-header__container">
+            <a class="page-header__logo">
+              <img src="img/logo.svg" alt="Седона" width="102" height="84">
+            </a>
+            <button type="button" class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+          </div>
         </nav>
       </header>
-    </div>
-    <div class="container">
+
       <main class="page-main">
         <section class="page-main__background">
           <img src="https://via.placeholder.com/282x214" alt="Картинка Седоны">
@@ -34,7 +36,7 @@
 
         <section class="performance">
           <h2 class="performance__title subtitle">
-            СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!
+            СЕДОНА — небольшой городок в Аризоне,<br> заслуживающий большего!
           </h2>
           <p class="performance__text site-text">
             Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
@@ -50,7 +52,7 @@
                   <p>— №1 —</p>
                   <p class="reasons__text site-text">СЕДОНА не атракцион для туристов, там течет своя жизнь</p>
                 </div>
-                <img class="reasons__content-image" src="img/city.jpg" alt="Городок в Седоне" width="320" height="260">
+                <img class="reasons__content-image" src="img/city.jpg" alt="Городок в Седоне" width="320" height="256">
               </div>
                 <ul class="reasons__list features">
                   <li class="features-item">
@@ -58,25 +60,25 @@
                     <p class="features__list-text site-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                   </li>
                   <li class="features-item">
-                    <h3 class="features-title subtitle">Сувениры</h3>
-                    <p class="features__list-text site-text">Не только китайского, но и местного производства!</p>
-                  </li>
-                  <li class="features-item">
                     <h3 class="features-title subtitle">Еда</h3>
                     <p class="features__list-text site-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  </li>
+                  <li class="features-item">
+                    <h3 class="features-title subtitle">Сувениры</h3>
+                    <p class="features__list-text site-text">Не только китайского, но и местного производства!</p>
                   </li>
                 </ul>
             </div>
             <div class="reasons__content">
               <div class="reasons__content-container">
-                <div class="content__container">
-                  <h2 class="reasons__content-title subtitle">
+                <div class="content__container content__container--second">
+                  <h2 class="reasons__content-title reasons__content-title--second subtitle">
                     Там есть мост дьявола
                   </h2>
                   <p>— №2 —</p>
-                  <p class="reasons__text site-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                  <p class="reasons__text reasons__text--second site-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
-                <img src="img/bridge.jpg" alt="Мост дьявола" width="320" height="260">
+                <img class="content__container-image" src="img/bridge.jpg" alt="Мост дьявола" width="320" height="256">
               </div>
             </div>
             <div class="reasons__list">
@@ -84,22 +86,22 @@
                 <h2 class="reasons__content-title subtitle">
                   Небольная площадь
                 </h2>
-                <p>— №3 —</p>
+                <p class="reasons__number">— №3 —</p>
                 <p class="reasons__text site-text">Все интересные места находятся очень близко</p>
               </div>
               <div class="reasons__title">
                 <h2 class="reasons__content-title subtitle">
                   Красивая дорого
                 </h2>
-                <p>— №4 —</p>
-                <p class="reasons-text site-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                <p class="reasons__number">— №4 —</p>
+                <p class="reasons__text site-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
               <div class="reasons__title">
                 <h2 class="reasons__content-title subtitle">
                   Мало туристов
                 </h2>
-                <p>— №5 —</p>
-                <p class="reasons-text site-text">Большинство едет в гранд каньон и толпится там</p>
+                <p class="reasons__number">— №5 —</p>
+                <p class="reasons__text site-text">Большинство едет в гранд каньон и толпится там</p>
               </div>
             </div>
           </div>
@@ -110,7 +112,8 @@
             <h2 class="location__title subtitle">
               Заинтересовалить?
             </h2>
-            <p class="location__text site-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <p class="location__text site-text">Укажите предполагаемые даты поездки,</p>
+            <p class="location__text site-text"> и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <button type="button" class="location__button button">Найти гостиницу</button>
             <div class="location__map">
               <img src="img/map.jpg" alt="Карта с указанием местопложения" width="320" height="350">
@@ -118,8 +121,7 @@
           </div>
         </section>
       </main>
-    </div>
-    <div class="container">
+
       <footer class="page-footer">
         <div class="page-footer__container">
           <h2 class="page-footer__title subtitle">
@@ -153,5 +155,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,5 +1,12 @@
 .page-main__background {
-  width: 320px;
   height: 389px;
   background: url(../img/sedona.jpg) no-repeat 50% 50%;
+  position: relative;
+}
+
+@media (max-width: @mobile-width-only) {
+  .page-main__background {
+    top: -28px;
+    z-index: -1;
+  }
 }

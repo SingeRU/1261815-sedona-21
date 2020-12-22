@@ -1,5 +1,27 @@
+.reasons {
+  margin-top: 42px;
+}
+
+@media (min-width: @tablet-width) {
+  .reasons__number {
+    margin: 0;
+    padding: 20px 0;
+  }
+}
+
+.reasons__text {
+  font-size: 16px;
+  padding: 0 15px;
+}
+
+@media (min-width: @tablet-width) {
+  .reasons__text--second {
+    padding: 0 20px;
+  }
+}
+
 .reasons__list {
-  width: 320px;
+  min-width: 320px;
   padding: 0;
   margin: 0 auto;
 }
@@ -15,6 +37,20 @@
 @media (min-width: @desktop-width) {
   .reasons__list {
     width: @desktop-width;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reasons__list {
+    width: @desktop-width;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .reasons__content-image {
+    height: 256px;
   }
 }
 
@@ -22,6 +58,23 @@
   background-color: @lightgrey;
   height: 168px;
   width: 320px;
+  position: relative;
+}
+
+@media (max-width: @mobile-width-only) {
+  .reasons__title::after {
+    content: "";
+    left: 20px;
+    bottom: 15px;
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    background-color: @grey;
+  }
+
+  .reasons__title:last-child::after {
+    content: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -58,5 +111,16 @@
     width: @desktop-width;
     grid-template-columns: 400px 1fr;
     grid-template-rows: 256px;
+  }
+}
+
+.reasons__content-title {
+  font-size: 21px;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .reasons__content-title {
+    padding: 0 53px;
   }
 }

@@ -1,22 +1,9 @@
-.location__container {
-  width: 280px;
-  margin: 0 auto;
-}
-
-@media (min-width: @tablet-width) {
-  .location__container {
-    width: 435px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .location__container {
-    width: 435px;
-  }
+.location {
+  margin-top: 38px;
 }
 
 .location__title {
-  font-size: 26px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 26px;
@@ -24,11 +11,57 @@
   text-align: center;
 }
 
+@media (min-width: @tablet-width) {
+  .location__title {
+    font-size: 30px;
+  }
+}
+
 .location__text {
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 0;
   text-align: center;
+}
+
+@media (min-width: @desktop-width) {
+  .location__text {
+    font-size: 14px;
+  }
+}
+
+.location__button {
+  margin-top: 27px;
+  margin-bottom: 49px;
+  border: none;
+  color: @white;
+  text-transform: uppercase;
+  background-color: @lightskyblue;
+  width: 280px;
+  height: 58px;
+  font-size: 21px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @darkenskyblue;
+  }
+
+  &:active {
+    background-color: @blackskyblue;
+    color: rgba(white, 0.3);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .location__button {
+    width: 435px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .location__button {
+    width: 458px;
+  }
 }
