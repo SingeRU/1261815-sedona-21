@@ -1,7 +1,8 @@
-.container {
-  max-width: @desktop-width-container;
-  margin: 0 auto;
-  padding: 0;
+@media (min-width: @mobile-width) {
+  .container {
+    max-width: @mobile-width-container;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: @tablet-width) {
@@ -12,6 +13,6 @@
 
 @media (max-width: @desktop-width) {
   .container {
-    max-width: @desktop-width-container;
+    max-width: @desktop-width;
   }
 }
