@@ -1,4 +1,33 @@
-.content-container {
-  width: 320px;
-  height: 211px;
+.content__container {
+  min-width: 320px;
+  height: 191px;
+  margin: 0;
+  padding-top: 39px;
+  color: @white;
+  background-color: @lightskyblue;
+}
+
+@media (min-width: @tablet-width) {
+  .content__container {
+    min-width: 256px;
+    min-height: 208px;
+    padding-top: 48px;
+  }
+
+  .content__container--second {
+    order: 1;
+    width: 256px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .content__container--second {
+    width: 400px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .content__container-image {
+    height: 256px;
+  }
 }
