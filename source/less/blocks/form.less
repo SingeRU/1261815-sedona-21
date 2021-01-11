@@ -1,0 +1,148 @@
+.form__fieldset,
+.form__contact,
+.form__mark,
+.form__check,
+.form__review {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__fieldset-title,
+.form__contact-title,
+.form__mark-title,
+.form__check-title,
+.form__review-title {
+  font-size: 18px;
+}
+
+.form__label-name,
+.form__label-surname,
+.form__label-middlename {
+  margin-right: 10px;
+}
+
+
+.form__input-text {
+  border: none;
+  border-radius: 0;
+  background-color: @lightengrey;
+  height: 58px;
+  margin-bottom: 20px;
+  color: @black;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0 0 0 22px;
+}
+
+.form__input-text--1 {
+  width: 230px;
+}
+
+.form__input-text--2 {
+  width: 192px;
+}
+
+.form__input-text--3 {
+  width: 194px;
+}
+
+.form__fieldset:last-child {
+  margin-bottom: 0;
+}
+
+.form__fieldset-title {
+  text-align: center;
+}
+
+
+.form__input-phone,
+.form__input-email {
+  padding: 0 20px;
+  margin: 0 20px;
+  min-width: 240px;
+}
+
+.form__label-phone,
+.form__label-email {
+  position: relative;
+}
+
+.form__label-phone::after,
+.form__label-email::after {
+  content: "";
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  right: 20px;
+  top: 24px;
+  background-color: @darkengrey;
+  z-index: 1;
+}
+
+.form__mark {
+  text-align: left;
+}
+
+.form__mark-title {
+  text-align: center;
+}
+
+.form__mark [type="radio"] {
+  position: absolute;
+  right: 100vw;
+}
+
+.form__mark [type="radio"] + label {
+  display: inline-block;
+  position: relative;
+  margin: 0 4px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.33);
+  cursor: pointer;
+}
+
+.form__mark [type="radio"] + label:nth-of-type(1) {
+  background: @lightengrey;
+}
+
+.form__mark [type="radio"] + label:nth-of-type(2) {
+  background: @lightengrey;
+}
+
+.form__mark [type="radio"] + label:nth-of-type(3) {
+  background: @lightengrey;
+}
+
+.form__mark [type="radio"] + label::before {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  bottom: 0;
+  left: 14px;
+  opacity: 0;
+  background: url(../img/black-circle.svg) 50%/50% no-repeat;
+  transition: all 0.3s ease;
+  content: "";
+}
+
+.form__mark [type="radio"]:checked + label::before {
+  opacity: 1;
+}
+
+
+.form__textarea {
+  background-color: @lightengrey;
+  color: @black;
+  font-size: 18px;
+  width: 280px;
+  height: 118px;
+  font-weight: bold;
+  border: none;
+  padding-top: 17px;
+  padding-left: 27px;
+}
