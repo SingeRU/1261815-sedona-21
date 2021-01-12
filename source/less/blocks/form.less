@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   border: none;
+  position: relative;
 }
 
 .form__fieldset-title,
@@ -14,6 +15,226 @@
 .form__check-title,
 .form__review-title {
   font-size: 18px;
+  text-align: center;
+}
+
+.form__contact {
+  margin-bottom: 40px;
+}
+
+.form__contact::before {
+  display: none;
+}
+
+.form__contact::after {
+  content: "";
+  position: absolute;
+  background-color: @speciallight;
+  width: 100%;
+  height: 1px;
+  bottom: -28px;
+  left: 0;
+}
+
+@media (min-width: @desktop-width) {
+  .form__contact {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__contact-title {
+    width: 100%;
+  }
+}
+
+.form__text {
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .form__text {
+    padding-left: 42px;
+  }
+}
+
+.form__fieldset::after {
+  content: "";
+  position: absolute;
+  background-color: @speciallight;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+}
+
+.form__check::before {
+  display: none;
+}
+
+.form__mark::after,
+.form__check::after {
+  content: "";
+  position: absolute;
+  background-color: @speciallight;
+  width: 100%;
+  height: 1px;
+}
+
+@media (min-width: @tablet-width) {
+  .form__fieldset-title,
+  .form__contact-title,
+  .form__mark-title,
+  .form__check-title,
+  .form__review-title {
+    font-size: 21px;
+    margin: 0;
+  }
+
+  .form__contact-title {
+    margin-bottom: 33px;
+  }
+
+  .form__check-title {
+    margin-bottom: 48px;
+  }
+
+  .form__review-title {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__fieldset::after,
+  .form__mark::after {
+    display: none;
+  }
+
+  .form__fieldset-title {
+    text-align: start;
+    padding-left: 37px;
+  }
+
+  .form__mark-title {
+    text-align: start;
+    padding-left: 29px;
+  }
+
+  .form__fieldset-title,
+  .form__mark-title {
+    margin: 0;
+    margin-bottom: 62px;
+  }
+
+  .form__contact {
+    position: relative;
+  }
+
+  .form__contact::before,
+  .form__contact::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: @speciallight;
+    width: 16%;
+    height: 1px;
+    top: 12px;
+    right: 85px;
+  }
+
+  .form__contact::after {
+    left: 60px;
+  }
+
+  .form__check {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 74px;
+  }
+
+  @media (min-width: @desktop-width) {
+    .form__check {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .form__check-title {
+      width: 100%;
+    }
+  }
+
+  .form__check::before,
+  .form__check::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: @speciallight;
+    width: 16%;
+    height: 1px;
+    top: 24px;
+    right: 85px;
+  }
+
+  .form__check::after {
+    left: 60px;
+  }
+
+  .form__check-title {
+    width: 100%;
+    padding: 0 220px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .form__fieldset-title {
+    padding-left: 83px;
+  }
+
+  .form__check-title {
+    padding: 0 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__mark-title {
+    padding-left: 130px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__contact::before,
+  .form__contact::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: @speciallight;
+    width: 280px;
+    height: 1px;
+    top: 12px;
+    right: 85px;
+  }
+
+  .form__contact::after {
+    left: 120px;
+  }
+
+  .form__check::before,
+  .form__check::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: @speciallight;
+    width: 280px;
+    height: 1px;
+    top: 24px;
+    right: 85px;
+  }
+
+  .form__check::after {
+    left: 120px;
+  }
 }
 
 .form__label-name,
@@ -30,7 +251,6 @@
   height: 58px;
   margin-bottom: 20px;
   color: @black;
-  text-transform: uppercase;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -49,25 +269,54 @@
   width: 194px;
 }
 
-.form__fieldset:last-child {
-  margin-bottom: 0;
+@media (min-width: @desktop-width) {
+  .form__input-text--1 {
+    width: 350px;
+  }
+
+  .form__input-text--2 {
+    width: 312px;
+  }
+
+  .form__input-text--3 {
+    width: 314px;
+  }
 }
 
-.form__fieldset-title {
-  text-align: center;
+.form__fieldset:last-child {
+  margin-bottom: 0;
 }
 
 
 .form__input-phone,
 .form__input-email {
-  padding: 0 20px;
   margin: 0 20px;
-  min-width: 240px;
+  width: 80%;
+  text-transform: none;
 }
 
 .form__label-phone,
 .form__label-email {
   position: relative;
+}
+
+.form__input-phone {
+  margin-bottom: 32px;
+}
+
+@media (min-width: @tablet-width) {
+  .form__input-phone,
+  .form__input-email {
+    width: 90%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__input-phone,
+  .form__input-email {
+    width: 315px;
+    margin: 0;
+  }
 }
 
 .form__label-phone::after,
@@ -77,17 +326,121 @@
   width: 58px;
   height: 58px;
   right: 20px;
-  top: 24px;
   background-color: @darkengrey;
   z-index: 1;
 }
 
-.form__mark {
-  text-align: left;
+@media (min-width: @desktop-width) {
+  .form__label-phone::after,
+  .form__label-email::after {
+    right: 0;
+  }
 }
 
-.form__mark-title {
-  text-align: center;
+@media (min-width: @tablet-width) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__mark {
+    order: 0;
+    width: 50%;
+    position: relative;
+  }
+
+  .form__fieldset {
+    order: 1;
+    width: 50%;
+  }
+
+  .form__fieldset::before {
+    content: "";
+    position: absolute;
+    background-color: @speciallight;
+    width: 1px;
+    left: 0;
+    height: 292px;
+  }
+
+  .form__contact {
+    text-align: left;
+    order: 2;
+    width: 100%;
+  }
+
+  .form__check {
+    order: 3;
+  }
+
+  .form__review {
+    order: 4;
+    width: 100%;
+  }
+
+  .form__text {
+    margin-bottom: 17px;
+  }
+}
+
+.form__textarea {
+  background-color: @lightengrey;
+  color: @black;
+  font-size: 18px;
+  width: 280px;
+  height: 118px;
+  font-weight: bold;
+  border: none;
+  padding-top: 17px;
+  padding-left: 27px;
+}
+
+@media (min-width: @tablet-width) {
+  .form__textarea {
+    width: 648px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__textarea {
+    width: 960px;
+  }
+}
+
+.form__review-text {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .form__review-text {
+    display: inline;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__review-button {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 0 45px;
+  }
+
+  .form__input-submit {
+    width: 324px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__review-button {
+    margin: 0 105px;
+  }
+
+}
+
+//Custom radio
+
+.form__mark {
+  text-align: left;
 }
 
 .form__mark [type="radio"] {
@@ -102,7 +455,6 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.33);
   cursor: pointer;
 }
 
@@ -134,15 +486,55 @@
   opacity: 1;
 }
 
+//Custom chekbox
 
-.form__textarea {
-  background-color: @lightengrey;
-  color: @black;
-  font-size: 18px;
-  width: 280px;
-  height: 118px;
-  font-weight: bold;
-  border: none;
-  padding-top: 17px;
-  padding-left: 27px;
+.form__check {
+  text-align: left;
+}
+
+.form__check [type="checkbox"] {
+  position: absolute;
+  right: 100vw;
+}
+
+.form__check [type="checkbox"] + label {
+  display: inline-block;
+  position: relative;
+  margin: 0 4px;
+  width: 48px;
+  height: 48px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.form__check [type="checkbox"] + label:nth-of-type(1) {
+  background: @lightengrey;
+}
+
+.form__check [type="checkbox"] + label:nth-of-type(2) {
+  background: @lightengrey;
+}
+
+.form__check [type="checkbox"] + label:nth-of-type(3) {
+  background: @lightengrey;
+}
+
+.form__check [type="checkbox"] + label:nth-of-type(4) {
+  background: @lightengrey;
+}
+
+.form__check [type="checkbox"] + label::before {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  bottom: 0;
+  left: 14px;
+  opacity: 0;
+  background: url(../img/check-mark.svg) 50%/50% no-repeat;
+  transition: all 0.3s ease;
+  content: "";
+}
+
+.form__check [type="checkbox"]:checked + label::before {
+  opacity: 1;
 }

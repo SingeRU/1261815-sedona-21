@@ -34,12 +34,13 @@
         </section>
 
         <section class="comment">
-          <h2 class="commet__title subtitle">Оставьте свой отзыв</h2>
+          <h2 class="comment__title subtitle">Оставьте свой отзыв</h2>
           <p class="comment__text site-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </section>
+
         <form class="form" action="#">
           <fieldset class="form__fieldset">
-            <h2 class="form__fieldset-title">Представьтесь</h2>
+            <h2 class="form__fieldset-title">Представьтесь:</h2>
             <label class="form__label">
               <span class="form__label-name">Имя*:</span>
               <input class="form__input-text form__input-text--1" type="text" id="name-space" placeholder="Петр">
@@ -55,13 +56,13 @@
           </fieldset>
 
           <fieldset class="form__contact">
-            <h2 class="form__contact-title">Контактная информация</h2>
+            <h2 class="form__contact-title">Контактная информация:</h2>
             <label class="form__label-phone">
-              <span class="form__text">Контактный телефон*:</span><br>
+              <span class="form__text">Контактный телефон*:</span>
               <input class="form__input-text form__input-phone" type="text" placeholder="Введите телефон">
             </label><br>
             <label class="form__label-email">
-              <span class="form__text">Электронная почта*:</span><br>
+              <span class="form__text">Электронная почта*:</span>
               <input class="form__input-text form__input-email" type="text" placeholder="Введите e-mail">
             </label>
           </fieldset>
@@ -87,22 +88,26 @@
 
           <fieldset class="form__check">
             <h2 class="form__check-title">Посещенные достопримечательности:</h2>
-            <label class="form__label">
-              <input class="form__input-checkbox " type="checkbox" name="check_one" name="Мост Дьявола" checked>
-              <span class="form__text">Мост Дьявола</span>
-            </label><br>
-            <label class="form__label">
-              <input class="form__input-checkbox" type="checkbox" name="check_one" name="Гора-Колокол" checked>
-              <span class="form__text">Гора-Колокол</span>
-            </label><br>
-            <label class="form__label">
-              <input class="form__input-checkbox" type="checkbox" name="check_one" name="Слайд-парк" checked>
-              <span class="form__text">Слайд-парк</span>
-            </label><br>
-            <label class="form__label">
-              <input class="form__input-checkbox" type="checkbox" name="check_one" name="Красные скалы">
-              <span class="form__text">Красные скалы</span>
-            </label>
+            <div class="checkbox__container">
+              <input class="form__input-checkbox " type="checkbox" id="check_one" name="Мост Дьявола" checked>
+              <label for="check_one" class="form__label"></label>
+              <span class="checkbox__text">Мост Дьявола</span>
+            </div>
+            <div class="checkbox__container">
+              <input class="form__input-checkbox" type="checkbox" id="check_two" name="Гора-Колокол" checked>
+              <label for="check_two" class="form__label"></label>
+              <span class="checkbox__text">Гора-Колокол</span>
+            </div>
+            <div class="checkbox__container">
+              <input class="form__input-checkbox" type="checkbox" id="check_three" name="Слайд-парк" checked>
+              <label for="check_three" class="form__label"></label>
+              <span class="checkbox__text">Слайд-парк</span>
+            </div>
+            <div class="checkbox__container">
+              <input class="form__input-checkbox" type="checkbox" id="check_four" name="Красные скалы">
+              <label for="check_four" class="form__label"></label>
+              <span class="checkbox__text">Красные скалы</span>
+            </div>
           </fieldset>
 
           <fieldset class="form__review">
@@ -110,7 +115,10 @@
             <label class="form__label">
               <textarea class="form__textarea" name="" id="" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
-            <input class="form__input-submit button" type="submit" value="Отправить отзыв"></button>
+            <div class="form__review-button">
+              <input class="form__input-submit button" type="submit" value="Отправить отзыв"></button>
+              <p class="form__review-text">* — обязательные поля</p>
+            </div>
           </fieldset>
         </form>
       </main>
