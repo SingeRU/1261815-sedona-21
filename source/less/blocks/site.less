@@ -64,10 +64,6 @@
   text-decoration: none;
   color: @white;
   line-height: 55px;
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 @media (min-width: @tablet-width) {
@@ -76,6 +72,14 @@
     color: @black;
     transition: 0.2s;
     font-weight: bold;
+  }
+
+  .site-list__link:hover {
+    color: @darkenskyblue;
+  }
+
+  .site-list__link:active {
+    opacity: 0.3;
   }
 }
 
