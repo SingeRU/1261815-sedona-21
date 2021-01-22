@@ -30,6 +30,10 @@
   .reasons__list {
     width: @tablet-width;
     display: flex;
+    height: 256px;
+  }
+
+  .reasons__list--1 {
     height: 330px;
   }
 }
@@ -60,6 +64,10 @@
   position: relative;
 }
 
+.reasons__title:nth-child(1) {
+  padding-top: 30px;
+}
+
 @media (max-width: @mobile-width-only) {
   .reasons__title::after {
     content: "";
@@ -84,11 +92,21 @@
     flex-direction: column;
     justify-content: center;
   }
+
+  .reasons__title:nth-child(1) {
+    padding-top: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .reasons__title {
     width: 400px;
+  }
+}
+
+@media (max-width: @mobile-width-only){
+  .reasons__content-container {
+    height: 490px;
   }
 }
 
