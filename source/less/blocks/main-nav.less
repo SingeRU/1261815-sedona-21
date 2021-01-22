@@ -68,9 +68,14 @@
     transform: rotate(-45deg);
   }
 
+  &:hover::before,
+  &:hover::after {
+    opacity: 0.6;
+  }
+
   &:active::before,
   &:active::after {
-    background-color: fade(#ffffff, 30%);
+    opacity: 0.3;
   }
 }
 

@@ -1,3 +1,9 @@
+@media (min-width: @tablet-width) {
+  .features {
+    height: 330px;
+  }
+}
+
 .features-title {
   text-align: start;
   padding-left: 69px;
@@ -8,27 +14,31 @@
   .features-title--1 {
     padding: 0;
     text-align: center;
+    margin-top: 78px;
+  }
+
+  .features-title--2 {
+    margin-top: 50px;
   }
 
   .features-title--3 {
     padding-left: 108px;
+    margin-top: 78px;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .features-title--1 {
-    padding: 0;
-    text-align: center;
-  }
-
-  .features-title--2 {
-    padding: 0;
-    text-align: center;
-  }
-
+  .features-title--1,
+  .features-title--2,
   .features-title--3 {
     padding: 0;
     text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features-title--2 {
+    margin-top: 79px;
   }
 }
 
@@ -80,6 +90,10 @@
     flex-direction: column;
     min-width: 256px;
   }
+
+  .features-item:nth-child(2) {
+    order: 1;
+  }
 }
 
 
@@ -121,23 +135,24 @@
     width: 75px;
     height: 72px;
     left: 90px;
-    top: 20px;
+    top: 57px;
     background: url(../img/icon-house-tablet.svg) no-repeat;
   }
 
   .features-item:nth-child(2)::before {
     width: 64px;
     height: 75px;
-    left: 90px;
-    top: 20px;
+    left: 94px;
+    top: 57px;
     background: url(../img/icon-gift-tablet.svg) no-repeat;
+    order: 1;
   }
 
   .features-item:nth-child(3)::before {
     width: 76px;
     height: 68px;
     left: 90px;
-    top: 20px;
+    top: 57px;
     background: url(../img/icon-burger-tablet.svg) no-repeat;
   }
 }
@@ -147,7 +162,7 @@
     width: 75px;
     height: 73px;
     left: 168px;
-    top: 30px;
+    top: 59px;
     background: url(../img/icon-house-desktop.svg) no-repeat;
   }
 
@@ -155,7 +170,7 @@
     width: 63px;
     height: 75px;
     left: 157px;
-    top: 30px;
+    top: 59px;
     background: url(../img/icon-gift-desktop.svg) no-repeat;
   }
 
@@ -163,7 +178,7 @@
     width: 77px;
     height: 69px;
     left: 168px;
-    top: 30px;
+    top: 59px;
     background: url(../img/icon-burger-desktop.svg) no-repeat;
   }
 }
