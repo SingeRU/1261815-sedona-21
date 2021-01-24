@@ -1,27 +1,31 @@
 .content__container {
   min-width: 320px;
-  height: 191px;
+  height: 157px;
   margin: 0;
-  padding-top: 39px;
+  padding-top: 30px;
   color: @white;
   background-color: @lightskyblue;
+}
+
+.content__container--2 {
+  padding-top: 36px;
 }
 
 @media (min-width: @tablet-width) {
   .content__container {
     min-width: 256px;
-    min-height: 208px;
-    padding-top: 48px;
+    height: 214px;
+    padding-top: 42px;
   }
 
-  .content__container--second {
+  .content__container--2 {
     order: 1;
     width: 256px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .content__container--second {
+  .content__container--2 {
     width: 400px;
   }
 }

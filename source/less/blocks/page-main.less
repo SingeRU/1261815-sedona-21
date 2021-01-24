@@ -1,8 +1,8 @@
 .page-main__background {
   height: 389px;
-  background: url(../img/back-mobile.jpg) no-repeat 50%;
+  background: url("../img/back-mobile.jpg") no-repeat 50%;
   position: relative;
-  top: -28px;
+  top: -32px;
   z-index: -1;
 
   @media (min-resolution: 2dppx) {
@@ -11,50 +11,108 @@
   }
 }
 
+.page-main__background--form {
+  height: 157px;
+  background: url("../img/back-form.jpg") no-repeat 50%;
+  position: relative;
+  top: -32px;
+  z-index: -1;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-form@2x.jpg");
+    background-size: 320px auto;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .page-main__background {
-    background: url(../img/back-tablet.jpg) no-repeat 50%;
+    background: url("../img/back-tablet.jpg") no-repeat 50%;
+    top: 0;
+    height: 518px;
   }
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-tablet@2x.jpg");
     background-size: 768px auto;
   }
+
+  .page-main__background--form {
+    height: 290px;
+    background: url("../img/back-form-tablet.jpg") no-repeat 50%;
+    position: relative;
+    top: 0;
+    z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-form-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
   .page-main__background {
-    background: url(../img/back-desktop.jpg) no-repeat 50%;
+    background: url("../img/back-desktop.jpg") no-repeat 50%;
   }
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-desktop@2x.jpg");
     background-size: 1200px auto;
   }
+
+  .page-main__background--form {
+    height: 331px;
+    background: url("../img/back-form-desktop.jpg") no-repeat 50%;
+    position: relative;
+    top: -31px;
+    z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-form-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
 }
 
 .page-main__image {
-  padding-top: 90px;
+  padding-top: 88px;
+}
+
+.page-main__image--form {
+  padding-top: 51px;
 }
 
 @media (min-width: @tablet-width) {
-  .page-main__background {
-    height: 518px;
-  }
   .page-main__image {
     padding-top: 77px;
+  }
+
+  .page-main__image--form {
+    padding-top: 93px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__image--form {
+    padding-top: 132px;
   }
 }
 
 .page-main__triangle {
   position: relative;
-  top: 20px;
+  top: 24px;
+}
+
+.page-main__triangle--form {
+  top: 2px;
 }
 
 @media (min-width: @tablet-width) {
   .page-main__triangle {
-    top: 26px
+    top: 26px;
+  }
+
+  .page-main__triangle--form {
+    top: 55px;
   }
 }
-
-

@@ -1,12 +1,12 @@
 .radio__container {
   display: flex;
   align-items: center;
-  margin-bottom: 13px;
+  margin-bottom: 21px;
   padding-left: 20px;
 }
 
 .radio__container:last-child {
-  margin-bottom: 49px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: @tablet-width) {
@@ -19,12 +19,13 @@
 @media (min-width: @tablet-width) {
   .radio__container {
     margin-bottom: 28px;
+    padding-left: 58px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .radio__container {
-    padding-left: 125px;
+    padding-left: 121px;
   }
 }
 
@@ -33,4 +34,41 @@
   font-size: 18px;
   font-weight: bold;
   text-transform: none;
+  position: absolute;
+  left: 52px;
+  top: 8px;
+  width: 184px;
+}
+
+@media (min-width: @tablet-width) {
+  .radio__text {
+    top: 10px;
+  }
+
+  .radio__text--2 {
+    top: 12px;
+    left: 51px;
+  }
+
+  .radio__text--3 {
+    left: 51px;
+    top: 14px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .radio__text {
+    top: 8px;
+  }
+
+  .radio__text--2 {
+    top: 11px;
+    left: 52px;
+  }
+
+  .radio__text--3 {
+    top: 13px;
+    left: 52px;
+  }
 }

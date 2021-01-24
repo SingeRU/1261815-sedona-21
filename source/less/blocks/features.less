@@ -1,29 +1,38 @@
 @media (min-width: @tablet-width) {
   .features {
     height: 330px;
+    margin: 0;
   }
 }
 
 .features-title {
   text-align: start;
   padding-left: 69px;
-  font-size: 21px;
+  font-size: 18px;
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
+  .features-title {
+    font-size: 21px;
+    line-height: 76px;
+  }
+
   .features-title--1 {
     padding: 0;
     text-align: center;
-    margin-top: 78px;
+    margin-top: 74px;
   }
 
   .features-title--2 {
     margin-top: 50px;
+    text-align: center;
   }
 
   .features-title--3 {
     padding-left: 108px;
-    margin-top: 78px;
+    margin-top: 72px;
+    text-align: center;
   }
 }
 
@@ -37,39 +46,51 @@
 }
 
 @media (min-width: @desktop-width) {
+  .features-title--1 {
+    margin-top: 54px;
+  }
+
   .features-title--2 {
-    margin-top: 79px;
+    margin-top: 54px;
+  }
+
+  .features-title--3 {
+    margin-top: 49px;
   }
 }
 
 .features__list-text {
   text-align: start;
   padding-left: 69px;
-  padding-bottom: 36px;
+  line-height: 19px;
+  font-size: 14px;
+  padding-bottom: 25px;
+  padding-top: 20px;
+  padding-right: 40px;
 }
 
 @media (min-width: @tablet-width) {
   .features__list-text {
     text-align: center;
-    padding: 0 17px;
+    padding: 0 31px;
   }
 
   .features__list-text--2 {
-    padding: 0 10px;
+    padding: 0 32px;
   }
 
   .features__list-text--3 {
-    padding: 0 35px;
+    padding: 0 52px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .features__list-text--1 {
-    padding: 0 40px;
+    padding: 0 49px;
   }
 
   .features__list-text--2 {
-    padding: 0 40px;
+    padding: 0 75px;
   }
 }
 
@@ -104,7 +125,7 @@
   height: 37px;
   left: 21px;
   top: -8px;
-  background: url(../img/icon-house.svg) no-repeat;
+  background: url("../img/icon-house.svg") no-repeat;
   z-index: 1;
 }
 
@@ -115,7 +136,7 @@
   height: 38px;
   left: 25px;
   top: -9px;
-  background: url(../img/icon-gift.svg) no-repeat;
+  background: url("../img/icon-gift.svg") no-repeat;
   z-index: 1;
 }
 
@@ -124,9 +145,9 @@
   position: absolute;
   width: 40px;
   height: 35px;
-  left: 21px;
-  top: -9px;
-  background: url(../img/icon-burger.svg) no-repeat;
+  left: 18px;
+  top: -3px;
+  background: url("../img/icon-burger.svg") no-repeat;
   z-index: 1;
 }
 
@@ -135,8 +156,8 @@
     width: 75px;
     height: 72px;
     left: 90px;
-    top: 57px;
-    background: url(../img/icon-house-tablet.svg) no-repeat;
+    top: 60px;
+    background: url("../img/icon-house-tablet.svg") no-repeat;
   }
 
   .features-item:nth-child(2)::before {
@@ -144,7 +165,7 @@
     height: 75px;
     left: 94px;
     top: 57px;
-    background: url(../img/icon-gift-tablet.svg) no-repeat;
+    background: url("../img/icon-gift-tablet.svg") no-repeat;
     order: 1;
   }
 
@@ -152,8 +173,8 @@
     width: 76px;
     height: 68px;
     left: 90px;
-    top: 57px;
-    background: url(../img/icon-burger-tablet.svg) no-repeat;
+    top: 64px;
+    background: url("../img/icon-burger-tablet.svg") no-repeat;
   }
 }
 
@@ -161,24 +182,24 @@
   .features-item:first-child::before {
     width: 75px;
     height: 73px;
-    left: 168px;
+    left: 161px;
     top: 59px;
-    background: url(../img/icon-house-desktop.svg) no-repeat;
+    background: url("../img/icon-house-desktop.svg") no-repeat;
   }
 
   .features-item:nth-child(2)::before {
     width: 63px;
     height: 75px;
-    left: 157px;
+    left: 168px;
     top: 59px;
-    background: url(../img/icon-gift-desktop.svg) no-repeat;
+    background: url("../img/icon-gift-desktop.svg") no-repeat;
   }
 
   .features-item:nth-child(3)::before {
     width: 77px;
     height: 69px;
     left: 168px;
-    top: 59px;
-    background: url(../img/icon-burger-desktop.svg) no-repeat;
+    top: 63px;
+    background: url("../img/icon-burger-desktop.svg") no-repeat;
   }
 }

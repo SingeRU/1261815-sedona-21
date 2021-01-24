@@ -1,6 +1,7 @@
 .copyright {
   display: flex;
   justify-content: center;
+  padding-top: 12px;
 }
 
 .copyright__text {
@@ -14,11 +15,24 @@
   margin-right: 13px;
 }
 
-.copyright__link--htmlacademy:hover {
+@media (min-width: @tablet-width) {
+  .copyright__text {
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright__text {
+    margin-right: 13px;
+  }
+}
+
+
+.copyright__link-image--htmlacademy:hover {
   fill: @skyblue;
 }
 
-.copyright__link--htmlacademy:active {
+.copyright__link-image--htmlacademy:active {
   fill: @black;
   fill-opacity: 0.3;
 }
