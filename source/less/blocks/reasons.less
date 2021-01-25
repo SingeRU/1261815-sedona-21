@@ -1,5 +1,5 @@
 .reasons {
-  padding-top: 51px;
+  padding-top: 33px;
   background-color: @white;
 }
 
@@ -169,7 +169,7 @@
     padding-top: 5px;
   }
 
-  .reasons__title:last-child::after {
+  .reasons__title:first-child::after {
     content: none;
   }
 }
@@ -193,10 +193,12 @@
 @media (max-width: @mobile-width-only) {
   .reasons__content-container {
     height: 482px;
+    margin-bottom: 19px;
   }
 
   .reasons__content-container--2 {
     height: 451px;
+    margin-bottom: 0;
   }
 }
 

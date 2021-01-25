@@ -7,8 +7,19 @@
   background-color: @lightskyblue;
 }
 
+.content__container--1 {
+  position: relative;
+  padding-top: 49px;
+}
+
 .content__container--2 {
   padding-top: 36px;
+}
+
+.content__container-triangle {
+  position: absolute;
+  top: -22px;
+  left: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -21,6 +32,10 @@
   .content__container--2 {
     order: 1;
     width: 256px;
+  }
+
+  .content__container-triangle {
+    display: none;
   }
 }
 
