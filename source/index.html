@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   </head>
-  <body class="page__body">
+  <body class="page-body">
 
     <svg style="display: none">
       <symbol id="twitter" viewBox="0 0 18 15">
@@ -22,7 +24,7 @@
       </symbol>
 
       <symbol id="copyright" viewBox="0 0 27 35">
-        <path class="copyright--htmlacademy" d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z"/>
+        <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z"/>
       </symbol>
     </svg>
 
@@ -30,7 +32,7 @@
       <header class="page-header">
         <nav class="main-nav">
           <div class="main-nav__container main-nav__container--opened">
-            <button type="button" class="main-nav__close"><span class="visually-hidden"></span></button>
+            <button type="button" class="main-nav__close main-nav__close--nojs"><span class="visually-hidden"></span></button>
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active"><a class="site-list__link">Главная</a></li>
               <li class="site-list__item"><a class="site-list__link" href="catalog.html">Фото и видео</a></li>
@@ -46,7 +48,7 @@
                 <img src="img/logo.svg" alt="Седона">
               </picture>
             </a>
-            <button type="button" class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+            <button type="button" class="main-nav__toggle main-nav__toggle--nojs"><span class="visually-hidden">Открыть меню</span></button>
           </div>
         </nav>
       </header>
@@ -63,7 +65,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/intro-triangle-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/intro-triangle-tablet.svg">
-            <img class="page-main__triangle" src="img/intro-triangle.svg">
+            <img class="page-main__triangle" src="img/intro-triangle.svg" alt="SVG triangle">
           </picture>
         </section>
         <h1 class="page-main__title visually-hidden">Sedona</h1>
@@ -80,9 +82,9 @@
         <section class="reasons">
           <div class="reasons__container">
             <div class="reasons__content">
-              <div class="reasons__content-container">
+              <div class="reasons__content-container content">
                 <div class="content__container content__container--1">
-                  <img class="content__container-triangle" src="img/white-copy.svg" >
+                  <img class="content__container-triangle" src="img/white-copy.svg" alt="SVG triangle">
                   <h2 class="reasons__content-title reasons__content-title--1">Настоящий городок</h2>
                   <p class="reasons__number">— №1 —</p>
                   <p class="reasons__text reasons__text--1 site-text">СЕДОНА не атракцион для туристов, там течет своя жизнь</p>
@@ -114,7 +116,7 @@
                 </ul>
             </div>
             <div class="reasons__content">
-              <div class="reasons__content-container reasons__content-container--2">
+              <div class="reasons__content-container reasons__content-container--2 content">
                 <div class="content__container content__container--2">
                   <h2 class="reasons__content-title reasons__content-title--2">
                     Там есть мост дьявола
